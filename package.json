@@ -8,7 +8,16 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.2.3"
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "nuxt": "^3.2.3",
+    "typescript": "*"
   },
   "volta": {
     "node": "18.14.2",
