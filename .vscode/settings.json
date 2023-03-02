@@ -2,6 +2,9 @@
   "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file",
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "eslint.format.enable": false,
-  "eslint.enable": true
+  "eslint.format.enable": true,
+  "eslint.enable": true,
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
 }
