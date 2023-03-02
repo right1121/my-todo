@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "nuxt": "^3.2.3"
+  },
+  "volta": {
+    "node": "18.14.2",
+    "yarn": "1.22.19"
   }
 }
