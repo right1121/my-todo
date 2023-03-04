@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Item from '~~/components/task/Item.vue'
+
 interface todoType {
   id: number
   title: string
@@ -28,14 +30,7 @@ const addTodo = () => {
       </button>
     </div>
     <div>
-      <div v-for="todo in todos" :key="todo.id" class="flex p-2 border">
-        <div class="w-14 text-right px-2">
-          {{ todo.id }}
-        </div>
-        <div class="grow">
-          {{ todo.title }}
-        </div>
-      </div>
+      <Item :todo="todo" v-for="todo in todos" :key="todo.id" />
     </div>
   </div>
 </template>
