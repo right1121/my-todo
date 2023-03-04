@@ -20,22 +20,18 @@ const addTodo = () => {
 </script>
 
 <template>
-  <div
-    v-for="todo in todos"
-    :key="todo.id"
-  >
-    {{ todo.id }}
-    {{ todo.title }}
-    分割
-    ▼
-  </div>
-  <div>
-    <input
-      v-model="title"
-      type="text"
-    >
-    <button @click="addTodo">
-      登録
-    </button>
+  <div class="">
+    <div class="flex space-x-2">
+      <input v-model="title" type="text" class="w-full input input-bordered">
+      <button @click="addTodo" class="btn btn-primary px-5">
+        登録
+      </button>
+    </div>
+    <div v-for="todo in todos" :key="todo.id">
+      {{ todo.id }}
+      {{ todo.title }}
+      分割
+      ▼
+    </div>
   </div>
 </template>
