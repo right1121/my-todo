@@ -1,13 +1,8 @@
 <script setup lang="ts">
-type StatusType = '未着手' | '完了'
+import { TodoType } from '~~/components/task/types'
 
-interface todoType {
-  id: number
-  title: string
-  status: StatusType
-}
 interface Props {
-  todo: todoType
+  todo: TodoType
 }
 defineProps<Props>()
 
