@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="container">
+  <div class="container mx-auto">
     <NuxtPage />
   </div>
 </template>
