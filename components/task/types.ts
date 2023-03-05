@@ -1,4 +1,4 @@
-export type StatusType = '未着手' | '完了'
+export type StatusType = '未着手' | '進行中' | '完了' | '中止' | '削除'
 
 export interface TodoType {
   id: number
