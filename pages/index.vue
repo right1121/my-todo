@@ -24,6 +24,11 @@ const taskDone = (id: number) => {
   if (todo?.status === undefined) return
   todo.status = '完了'
 }
+const beginTask = (id: number) => {
+  const todo = todos.value.find((todo) => todo.id === id)
+  if (todo?.status === undefined) return
+  todo.status = '進行中'
+}
 </script>
 
 <template>
@@ -35,7 +40,13 @@ const taskDone = (id: number) => {
       </button>
     </div>
     <div>
-      <Item :todo="todo" v-for="todo in todos" :key="todo.id" @click:done="taskDone" />
+      <Item
+        v-for="todo in todos"
+        :todo="todo"
+        :key="todo.id"
+        @click:done="taskDone"
+        @click:begin-task="beginTask"
+      />
     </div>
   </div>
 </template>
