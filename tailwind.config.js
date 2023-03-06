@@ -9,6 +9,9 @@ module.exports = {
     './app.vue'
   ],
   theme: {
+    container: {
+      padding: '20rem',
+    },
     extend: {}
   },
   plugins: [require('daisyui')]
